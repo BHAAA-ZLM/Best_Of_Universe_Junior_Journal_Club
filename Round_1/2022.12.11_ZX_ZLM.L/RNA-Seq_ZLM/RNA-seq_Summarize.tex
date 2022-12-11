@@ -1,0 +1,158 @@
+\documentclass[a4paper,12pt]{article}
+\begin{document}
+
+\textbf{\centering \Large{Sequencing at a New Layer of Complexity}}
+
+\center{Lumi}
+
+\raggedright
+%-----------------------------------%
+% The first article ----------------%
+\section{\large{The Transcriptional Landscape of the Yeast Genome Defined by RNA Sequencing}}
+
+The first article is an research article by Nagalakshmi et al. The demonstrated the power of RNA-seq by sequencing the yeast transcriptome.
+	
+% Current Researches ---------------%
+	\subsection{Former Studies}
+	Genes are used to be defined by
+	\begin{enumerate}
+		\item large open reading frames (ORFs).
+		\item Sequence conservation through different species.
+		\item cDNA probing of DNA tiling microarrays.
+	\end{enumerate}
+	
+	 These methods often fail to identify short exons, do not precisely reveal the boundaries of untranslated regions (UTRs), and/or have high false-positive rates
+	
+% RNA-Seq workflow ------------------% 
+	\subsection{RNA-Seq workflow}
+	\subsubsection{Experimental Preperation for Sequencing}
+	Detecting transciptomes by sequencing.
+	\begin{enumerate}
+		\item Isolation of polyA RNA.
+		\item Generation of double-strand complementary DNA (cDNA) by reverse transcription.
+		\item Fragment double-strand cDNA for Illumina sequencing. 
+	\end{enumerate}
+	
+	\subsubsection{Analyzing Sequencing Results}
+	\begin{enumerate}
+		\item Merging the replicates due to high resemblance. (Pearson coefficient $\rho$ indicates the resemblance. $|\rho|$ closer to 1 means greater resemblance.)
+		\item Mapping the sequencing results to the reference genome. They also performed gene ontology to check the fucntions of those genes.
+	\end{enumerate}
+	
+% Results From Analysis --------------% 
+	\subsection{Results From Analysis}
+	\begin{enumerate}
+		\item Being able to determine the 5' and 3' boundaries of a gene correctly at a lower cost. Thus being able to find the untranslated regions on both 5' and 3' ends (5' UTR and 3' UTR).
+		\item Determining the correct start site of a gene.
+		\item Finding some of the introns are actually expressed. Implying that these genes are probably not sliced at appreciable levels in vegetative cells.
+		\item Finding upstream ORFs (uORFs) for some of the genes. Suggesting that these genes are likely to be highly regulated.
+		\item Finding the transcripition in intergenetic regions.
+		\item RNA-seq is also a quantitative method, with high correlation with QPCR. The data of QPCR and RNA-seq data have a strong correlation ($R=0.98$). Is much better than the other methods.
+	\end{enumerate}
+	
+% Conclusions ------------------------% 
+	\subsection{Conclusions}
+	The advantages of RNA-seq are that:
+	\begin{enumerate}
+		\item It allows interrogation of all unique sequences of the genome, including those that are closely related, as long as unique bases exist that can be monitored.
+		\item It is very sensitive and offers a large dynamic range. It can detect and quantify levels of RNAs expressed at very low levels.
+		\item It can accurately determine exon boundaries.
+	\end{enumerate}
+	
+	The new RNA-seq method allowed scientists to map the transcriptional landscape of yeast genomes and define UTRs and previously unknown transcribed regions.
+%-----------------------------------%
+% The second article ---------------%
+\section{\large{{RNA-seq}: a revolutionary tool for transcriptomics}}
+This article is a review article by the same group who wrote the first article. This article is more detailed in the advantages and disadvantages of RNA-seq, and also a deeper view into transcriptomics.
+% Introduction ---------------------%
+\subsection{Introduction}
+\textbf{The key aims of transcriptomics are:}
+\begin{enumerate}
+	\item to catalogue all species of transcript, including mRNAs, non-coding RNAs and small RNAs
+	\item to determine the transcriptional structure of genes, in terms of their start sites, 5' and 3' ends, splicing patterns and other post-transcriptional modifications
+	\item to quantify the changing expression levels of each transcript during development and under different conditions
+\end{enumerate}
+
+\textbf{Limitations of previous \emph{microarray} methods:}
+\begin{itemize}
+	\item [--]Reliance upon existing knowledge about the genome sequence.
+	\item [--]High background levels owing to cross-hybridization.
+	\item [--]Limit dynamic range of detection.
+	\item [--]Comparing expression levels across different experiments is often difficult and can require complicated normalization methods.
+\end{itemize}
+
+\textbf{Limitations of previous \emph{tag-based sequencing} methods:}
+\begin{itemize}
+	\item [--] Sanger sequencing method is quite expensive. A significant portion of the short tags cannot be uniquely mapped to the reference genome.
+	\item [--] Only a portion of the transcript is analysed and isoforms are generally indistinguishable.
+\end{itemize}
+
+% Benifits ---------------------------%
+\subsection{RNA-seq Benifits}
+The workflow this article describes is the same with the previous one and can be found in Section 1.2. 
+
+\vspace{5mm}
+\textbf{The benifits of RNA-seq are:}
+\begin{itemize}
+	\item [--] Not limited to detecting transcripts that correspond to existing genomic sequence. So it is particularly useful for non-model organisms whose genomic sequences are not yet to be determined.
+	\item [--] Very low background signal because they are mapped unambiguously to the unique regions on the genome.
+	\item [--] Shown to be highly accurate for quantifying expression levels.
+	\item [--] Requires less RNA samples.
+\end{itemize}
+
+% Challenges -------------------------%
+\subsection{RNA-seq Challenges}
+Despites all the benifits of RNA-seq, it still have some drawbacks and futures scientists need to overcome these challenges (some of them are already solved).
+
+\vspace{5mm}
+\textbf{Challenges during library construction}
+\begin{enumerate}
+	\item Large RNA molecules need to be fragmented into smaller pieces (200-500bp) due to limitations in sequencing technologies. The fragmentation methods might be biased in different ways.
+	\item Large amount of short reads might result from PCR artifacts or they are a genuine reflection of abundant RNA species. One way to solve this problem is to compare the biological replicates. 
+	\item Difficulties in building strand specific libraries.
+\end{enumerate}
+
+\textbf{Challenges during bioinformatics analysis}
+\begin{itemize}
+	\item [--]Common informatics problems like the lacking the efficient methods to store, retrieve and process large amounts of data.
+	\item [--]Mapping short reads from RNA-seq data to the reference genome, or assembling them into contigs and then aligning them to the reference genome.
+	\item [--]Reads that span exon junctions or containing polyA tails need to be analysed seperately. Exon junctions spanning reads are difficult to analyze due to the presence of alternative splicing and trans-splcing.
+	\item [--]Short reads might match to multiple positions on the genome. Obtaining longer reads might solve this problem.
+	\item [--]Sequencing errors and polymorphisms are a problem while we are mapping data to the genome.
+\end{itemize}
+
+\textbf{Challenges between balancing coverage and cost}
+
+A better coverage requires more sequencing depth. Which means we need more reads. Thus elevating the cost of the whole experiment.
+
+% New Insights -------------------------%
+
+\subsection{RNA-seq Provides New Transcriptomic Insights}
+With the high resolution and sensitivity of RNA-seq, we are able to gain more insights into the field of transcriptomics. RNA-seq can be used for:
+\begin{itemize}
+	\item [--]Mapping gene and exon boundaries. Also discovering things like the UTR, uORFs, which are previously unknown to humans.
+	\item [--]Sudying the splicing diversity by searching for reads that span exon junctions as well as discovering new ones.
+	\item [--]Finding new transcriptions with high accuracy.
+\end{itemize}
+
+% Defining transcription level --------%
+\subsection{Defining Transcription Level}
+As a quantitative method, RNA-seq can be used to determine RNA expression levels accurately.
+
+It can be used to capture transcriptome dynamics across different types of tissues of the same individual.
+
+% Future -------------------------------%
+\subsection{The Future of RNA-seq}
+\begin{itemize}
+	\item [--]Single-cell RNA-seq.
+	\item [--]Lowering sequencing cost.
+	\item [--] Determining structure and dynamics of transcriptomes.
+	\item [--] And much more...
+\end{itemize}
+
+\vspace{20mm}
+
+\center{\footnotesize{Last Updated: \today}}
+
+\end{document}
+	

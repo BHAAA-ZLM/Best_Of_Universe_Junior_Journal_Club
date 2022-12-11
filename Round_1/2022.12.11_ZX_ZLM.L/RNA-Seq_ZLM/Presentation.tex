@@ -1,0 +1,151 @@
+\documentclass[12pt]{article}
+\begin{document}
+	\center \huge{{\textbf{Slides Preperation}}
+	\normalsize \center{Lumi}
+	
+	\raggedright
+
+	\section{The Two Articles}
+	\begin{itemize}
+		\item [-]The two articles are written in 2008 and 2009. 
+		\item [-]Some of the first essays to use RNA-seq in determining transcriptomics.
+		\item [-]One is the original article by Nagalakshmi et al., the other was by Zhong Wang from the same lab, which was a review article.
+		\item [-]The rise of next generation sequencing was in 2005.
+	\end{itemize}	
+	
+	\section{Author}
+	\begin{itemize}
+		\item [-]Michael Snyder is now in Stanford University. His lab developed the ChIP-chip technique (and also the ChIP-seq technique), also developed the high resolution tiling DNA microarray of human genome.
+		\item [-]Zhong Wang is now in Berkley Lab, University of Berkeley. Computational biologist, genome analysis group lead.
+	\end{itemize}
+	
+	\section{Background}
+	\subsection{Transcriptomics}
+	\begin{itemize}
+		\item[-] to catalogue all species of transcript, including mRNAs, non-coding RNAs and small RNAs
+		\item[-] to determine the transcriptional structure of genes, in terms of their start sites, 5' and 3' ends, splicing patterns and other post-transcriptional modifications
+		\item[-] to quantify the changing expression levels of each transcript during development and under different conditions
+	\end{itemize}
+	
+	\subsection{Previous Methods}
+	\subsubsection{Large Open Reading Frames (ORFs)}
+	Large open reading frames can contain a protein encoding sequence, but it's a very vague determination.
+	
+	\subsubsection{Conservative Regions}
+	Conservative regions across species implies homologous proteins. These sequences are very likely to encode a very important functional protein.
+	
+	\subsubsection{Microarray Method}
+	The microarray method of studying transcriptomics.
+	\begin{itemize}
+		\item [-] Design probes with known sequences and attach them to a chip. 
+		\item [-]We are able to know which genes are expressed in which cell by designing different flourecent dNDPs.
+		\item [-]And detecting with fluorometer.
+	\end{itemize}
+	However it have drawbacks.
+	\begin{itemize}
+		\item [-]Reliance upon existing knowledge about the genome sequence.
+		\item [-]High background levels owing to cross-hybridization.
+		\item [-]Limit dynamic range of detection.
+		\item [-]Comparing expression levels across different experiments is often difficult and can require complicated normalization methods.
+	\end{itemize}
+	
+	\subsubsection{Sanger Sequencing}
+	Expensive and highly time-consuming (RACE method mentioned later).
+	
+	\section{Workflow}
+	\begin{itemize}
+		\item [-]PCR with polyT primers or random hexamer primers.
+		\item [-]Need fragmentation because of sequencing limitations.
+	\end{itemize}
+	
+	\section{Data Analysis}
+	
+	\subsection{Merging Replicates}
+	Pearson coefficient is the correlation between the two sets of data.
+	
+	\subsection{Sequence Mapping}
+	\begin{itemize}
+		\item [-]Most detected reads are unique. (RT fig)
+		\item [-]No reads at the centromere position. (RB fig)
+		\item [-]Most chromosome positions are expressed. (L fig)
+	\end{itemize}
+	
+	\subsection{Gene Ontology}
+	Finding the functions of your sequenced and mapped genes. Not a big deal, just an R package DEseq2 will finish the job.
+	
+	\subsection{Determining UTRs}
+	\begin{itemize}
+		\item [-]The difference between RACE and RNA-seq results.(TL fig.)
+		\item [-]The length of the 5' UTR region. (TR fig.)
+		\item [-]The comparison of 5' UTR. (B fig.)
+		\item [-]RNA-seq determine the 5' UTR by looking at a dramatic signal reduction.
+		\item [-]3' UTR are similar.
+		\item [-]The Watson strand and Crick strand.
+		\item [-]Even if gene transcription results overlaps, the RNA-seq results can determine the UTRs.
+	\end{itemize}
+	
+	\subsection{Determining Introns}
+	Finding transcription in mRNA in previously thought to be intron intervals.
+	
+	\subsection{Prediction of uORFs}
+	\begin{itemize}
+		\item [-]Start condon ATG before the protein coding region.
+		\item [-]Lac operon like things.
+	\end{itemize}
+	
+	\subsection{Discovery of New Intergenic Region}
+	
+	\subsection{Quantification with RNA-seq}
+	\begin{itemize}
+		\item [-]The coefficient of determination is not different from the pearson correlation coefficient. But it's called the coefficient of determination.
+		\item [-]Much better than the microArray method with shrot and long sequence.
+	\end{itemize}
+	
+	\section{Challenges}
+	\subsection{Library Construction}
+	\subsubsection{Induced Bias in RNA Fragmentation}
+	Fragmentation of DNA with DNase I has 3' bias.
+	
+	Fragmentation of RNA with RNA hydrolysis etc. has a little bias towards the transcription site
+	\subsubsection{PCR Artifacts}
+	Unwanted production due to wierd mapping.
+	\subsubsection{Building Strand Specific Library}
+	Know which strand the gene is from. Not so important with proteins because we can look for start codons and stop codons. But it's important for functional RNA (e.g. antisense RNA).
+	\subsection{Bioinformatics}
+	\begin{itemize}
+		\item [-]The mapping of exons and polyA tails.
+		\item [-]The mapping in the presence of mutations.
+	\end{itemize}
+	
+	\section{Advantages}
+	\begin{enumerate}
+		\item As a sequencing method, it can interrogate unique sequences. Do not require a reference genome. Low background signal due to unique mapping (compared to microarray).
+		\item Quantitative methods.
+		\item Determining different UTR regions.
+	\end{enumerate}
+	
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
