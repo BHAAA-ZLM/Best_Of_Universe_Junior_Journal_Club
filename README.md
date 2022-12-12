@@ -32,6 +32,4 @@ This journal club has 3 major purposes.
 # Privious work
 ## round1
 [![](https://img.shields.io/badge/ZLM-RNA--seq-blue，"鹿鸣的pre")](https://github.com/BHAAA-ZLM/Best_Of_Universe_Junior_Journal_Club/commit/c761debd94b164a31086a17a3ca559f90abc9ebc)
-
-<img src="https://img.shields.io/badge/SUSTECH-Biology-brightgreen">
-<img src="https://img.shields.io/badge/SUSTECH-Biology-brightgreen">
+[![](https://img.shields.io/badge/ZX-T6SS-red，"鑫的pre")](https://github.com/BHAAA-ZLM/Best_Of_Universe_Junior_Journal_Club/tree/main/Round_1/2022.12.11_ZX_ZLM.L/T6SS_ZX)
