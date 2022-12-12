@@ -27,13 +27,11 @@ This journal club has 3 major purposes.
 ## If you are participants🙋
 1.You need to read the journal in advance and make sure that you do think carefully about it.
 
-All in all, respect everyone in the club! <img src="https://github.com/marsdream6/picture/blob/main/7993b0c5be82b151d19ed62520c4795.png?raw=true"> 
+##All in all, respect everyone in the club! <img src="https://github.com/marsdream6/picture/blob/main/7993b0c5be82b151d19ed62520c4795.png?raw=true"> 
 
 # Privious work
 ## round1
-
-[![/img/zhihu.png](https://img.shields.io/badge/ZLM-RNA--seq-blue) "鹿鸣的pre")][https://github.com/BHAAA-ZLM/Best_Of_Universe_Junior_Journal_Club/tree/main/Round_1/2022.12.11_ZX_ZLM.L/RNA-Seq_ZLM]
-[![](/img/zhihu.png "我的知乎，欢迎关注")][zhihu]
+[![](https://img.shields.io/badge/ZLM-RNA--seq-blue，"鹿鸣的pre")](https://github.com/BHAAA-ZLM/Best_Of_Universe_Junior_Journal_Club/commit/c761debd94b164a31086a17a3ca559f90abc9ebc)
 
 <img src="https://img.shields.io/badge/SUSTECH-Biology-brightgreen">
 <img src="https://img.shields.io/badge/SUSTECH-Biology-brightgreen">
