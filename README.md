@@ -29,6 +29,6 @@ This journal club has 3 major purposes.
 
 ### All in all, respect everyone and their work in the club! <img src="https://github.com/marsdream6/picture/blob/main/7993b0c5be82b151d19ed62520c4795.png?raw=true"> 
 
-## Privious work
+## Previous work
 ### round1
 [![](https://img.shields.io/badge/ZLM-RNA--seq-blue，"鹿鸣的pre")](https://github.com/BHAAA-ZLM/Best_Of_Universe_Junior_Journal_Club/tree/main/Round_1/2022.12.11_ZX_ZLM.L/RNA-Seq_ZLM) [![](https://img.shields.io/badge/ZX-T6SS-red，"鑫的pre")](https://github.com/BHAAA-ZLM/Best_Of_Universe_Junior_Journal_Club/tree/main/Round_1/2022.12.11_ZX_ZLM.L/T6SS_ZX) [![](https://img.shields.io/badge/ZJY-Alcohol%26RA-brightgreen，"ZJY的pre")](https://github.com/BHAAA-ZLM/Best_Of_Universe_Junior_Journal_Club/tree/main/Round_1/2023.02.01_ZJY) [![](https://img.shields.io/badge/XX-ZBP1__HeatStroke-red, "肖大佬的pre")](https://github.com/BHAAA-ZLM/Best_Of_Universe_Junior_Journal_Club/tree/main/Round_1/20230305_XX)
